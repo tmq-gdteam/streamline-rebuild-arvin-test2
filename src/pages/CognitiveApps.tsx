@@ -1,4 +1,5 @@
 import SEO from '../components/SEO';
+import { Link } from 'react-router-dom';
 import CustomerAndIntegrations from '../components/CustomerAndIntegrations';
 
 export default function CognitiveApps() {
@@ -102,7 +103,7 @@ export default function CognitiveApps() {
             Streamline's solid and automated apps help carry out and deliver intelligent communication solutions that doesn't give only one advantage for each channel but also helps in achieving your goals with full visibility and in an organized manner.
           </p>
           <div className="flex justify-center gap-4 mb-6">
-            <a href="/signup.html" className="btn btn-primary w-full sm:w-auto">Start Free Trial</a>
+            <Link to="/signup.html" className="btn btn-primary w-full sm:w-auto">Start Free Trial</Link>
             <a href="#apps-grid" className="btn btn-secondary w-full sm:w-auto">
               Explore Apps ↓
             </a>
@@ -128,9 +129,9 @@ export default function CognitiveApps() {
                 ))}
               </ul>
               <div className="mt-8 pt-4 border-t border-[var(--color-line)]">
-                <a href="/demo.html" className="text-[var(--color-brand-blue)] font-medium text-sm hover:underline flex items-center gap-1">
+                <Link to="/demo.html" className="text-[var(--color-brand-blue)] font-medium text-sm hover:underline flex items-center gap-1">
                   Learn more <span aria-hidden="true">→</span>
-                </a>
+                </Link>
               </div>
             </div>
           ))}

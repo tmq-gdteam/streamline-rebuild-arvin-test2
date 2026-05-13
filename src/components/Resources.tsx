@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Resources() {
   return (
     <section className="section-pad" id="resources">
@@ -14,7 +16,7 @@ export default function Resources() {
               <span className="block mb-2.5 text-[var(--color-brand-blue)] uppercase text-[11px] font-black tracking-[0.11em]">Guide</span>
               <h3 className="text-[21px] leading-[1.2] tracking-[-0.02em] font-bold mb-[10px]">The Hidden Cost of Disconnected Business Tools</h3>
               <p className="text-[var(--color-muted)] mb-0">See how fragmented systems slow growth and what to do instead.</p>
-              <a href="/blogs/the-hidden-cost-of-disconnected-business-tools.html" className="inline-flex mt-[18px] text-[var(--color-brand-blue)] font-black">Read guide →</a>
+              <Link to="/blogs.html" className="inline-flex mt-[18px] text-[var(--color-brand-blue)] font-black">Read guide →</Link>
             </div>
           </article>
           
@@ -24,7 +26,7 @@ export default function Resources() {
               <span className="block mb-2.5 text-[var(--color-brand-blue)] uppercase text-[11px] font-black tracking-[0.11em]">Strategy</span>
               <h3 className="text-[21px] leading-[1.2] tracking-[-0.02em] font-bold mb-[10px]">Why Omnichannel Communication Matters</h3>
               <p className="text-[var(--color-muted)] mb-0">Bring customer conversations together across every major channel.</p>
-              <a href="/blogs/why-omnichannel-communication-is-the-backbone-of-modern-business.html" className="inline-flex mt-[18px] text-[var(--color-brand-blue)] font-black">Read article →</a>
+              <Link to="/blogs.html" className="inline-flex mt-[18px] text-[var(--color-brand-blue)] font-black">Read article →</Link>
             </div>
           </article>
           
@@ -34,7 +36,7 @@ export default function Resources() {
               <span className="block mb-2.5 text-[var(--color-brand-blue)] uppercase text-[11px] font-black tracking-[0.11em]">Insights</span>
               <h3 className="text-[21px] leading-[1.2] tracking-[-0.02em] font-bold mb-[10px]">Financial Visibility Turns Data Into Advantage</h3>
               <p className="text-[var(--color-muted)] mb-0">Use better data flow to make confident operational decisions.</p>
-              <a href="/blogs/financial-visibility-turning-data-into-strategic-advantage.html" className="inline-flex mt-[18px] text-[var(--color-brand-blue)] font-black">Read insights →</a>
+              <Link to="/blogs.html" className="inline-flex mt-[18px] text-[var(--color-brand-blue)] font-black">Read insights →</Link>
             </div>
           </article>
         </div>

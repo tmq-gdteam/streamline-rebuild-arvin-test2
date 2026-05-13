@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function CustomerAndIntegrations() {
   return (
     <>
@@ -7,7 +9,7 @@ export default function CustomerAndIntegrations() {
             <p className="text-eyebrow">Our customer</p>
             <h2 className="text-h2 mb-[18px]">Loved by teams at 7‑Eleven</h2>
             <p className="text-subtitle text-[var(--color-ink-soft)] mb-6">“Since we make it a point to give our customers the most convenient experience, Streamline truly helped us achieve that goal.”</p>
-            <a className="font-black text-[var(--color-brand-blue)]" href="/success-stories/how-7-eleven-streamlined-their-business.html">Read the case study →</a>
+            <Link className="font-black text-[var(--color-brand-blue)]" to="/use-case.html">Read the case study →</Link>
           </div>
           <div className="justify-self-center w-[170px] md:w-[220px] h-[170px] md:h-[220px] grid place-items-center rounded-[28px] bg-[linear-gradient(145deg,white,#f1f6ff)] shadow-[var(--shadow-sm)]">
             <img src="/images/711-logo.png" alt="7-Eleven logo" className="max-w-[150px]" />
@@ -21,7 +23,7 @@ export default function CustomerAndIntegrations() {
             <p className="text-eyebrow">Integrates with your favorite tools</p>
             <h2 className="text-h2 mb-[18px]">Connect Acme with the tools you already use</h2>
             <p className="text-subtitle text-[var(--color-ink-soft)] mb-6">Make Streamline part of your operational stack and keep every system moving together.</p>
-            <a className="font-black text-[var(--color-brand-blue)]" href="/resources-main.html">Browse integrations →</a>
+            <Link className="font-black text-[var(--color-brand-blue)]" to="/resources-main.html">Browse integrations →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-[18px]" aria-hidden="true">
             <span className="grid place-items-center min-h-[86px] rounded-[20px] bg-white border border-[var(--color-line)] text-[var(--color-brand-blue)] text-[30px] font-black shadow-[var(--shadow-sm)]">S</span>
@@ -43,8 +45,8 @@ export default function CustomerAndIntegrations() {
             <p className="mb-0 text-white/80 text-[19px]">Join thousands of teams already using Streamline to work smarter and achieve more.</p>
           </div>
           <div className="relative z-10 flex flex-wrap gap-[14px]">
-            <a className="btn btn-light" href="/signup.html">Get Started Free</a>
-            <a className="btn btn-outline-light" href="/demo.html">Explore Streamline</a>
+            <Link className="btn btn-light" to="/signup.html">Get Started Free</Link>
+            <Link className="btn btn-outline-light" to="/demo.html">Explore Streamline</Link>
           </div>
         </div>
       </section>

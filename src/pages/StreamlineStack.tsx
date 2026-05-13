@@ -1,4 +1,5 @@
 import SEO from '../components/SEO';
+import { Link } from 'react-router-dom';
 import CustomerAndIntegrations from '../components/CustomerAndIntegrations';
 
 export default function StreamlineStack() {
@@ -32,10 +33,10 @@ export default function StreamlineStack() {
               Redefine Communication and Interactions. Go beyond basic communication by getting your advantage via a comprehensive, high-end, and diverse spectrum of digital solutions.
             </p>
             <div className="flex flex-wrap gap-4 mb-6">
-              <a href="/signup.html" className="btn btn-primary w-full sm:w-auto">Start Free Trial</a>
-              <a href="/demo.html" className="btn btn-secondary w-full sm:w-auto">
+              <Link to="/signup.html" className="btn btn-primary w-full sm:w-auto">Start Free Trial</Link>
+              <Link to="/demo.html" className="btn btn-secondary w-full sm:w-auto">
                 <span className="text-[var(--color-brand-blue)]">▶</span> See it in action
-              </a>
+              </Link>
             </div>
           </div>
           

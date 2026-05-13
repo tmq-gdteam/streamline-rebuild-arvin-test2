@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function FeatureStory() {
   return (
     <section className="py-[42px] pb-[24px]" id="products">
@@ -30,7 +32,7 @@ export default function FeatureStory() {
           <p className="text-eyebrow">Automate workflows</p>
           <h2 className="text-h2 mb-[18px]">Save time on repetitive tasks</h2>
           <p className="text-subtitle text-[var(--color-ink-soft)] mb-6">Build intelligent automations that connect messages, reminders, reviews, payments, data collection, and follow-up into one simple operational flow.</p>
-          <a className="font-black text-[var(--color-brand-blue)]" href="/why-streamline.html">Learn more →</a>
+          <Link className="font-black text-[var(--color-brand-blue)]" to="/why-streamline.html">Learn more →</Link>
         </div>
       </div>
 
@@ -41,7 +43,7 @@ export default function FeatureStory() {
           <p className="text-eyebrow">Collaborate in real time</p>
           <h2 className="text-h2 mb-[18px]">Work together, seamlessly</h2>
           <p className="text-subtitle text-[var(--color-ink-soft)] mb-6">Give teams the visibility they need to manage communication, service requests, customer activity, and business operations without switching between disconnected tools.</p>
-          <a className="font-black text-[var(--color-brand-blue)]" href="/interactive-channels.html">Explore channels →</a>
+          <Link className="font-black text-[var(--color-brand-blue)]" to="/interactive-channels.html">Explore channels →</Link>
         </div>
         <div className="relative min-h-[350px] lg:min-h-[520px] scale-[0.78] lg:scale-100 origin-top mb-[-60px] lg:mb-0 lg:order-2 order-1" aria-hidden="true">
           <div className="absolute right-[20px] top-[34px] w-[460px] h-[380px] rounded-[42%_58%_52%_48%/45%_38%_62%_55%] bg-[linear-gradient(145deg,rgba(232,239,255,0.92),rgba(246,249,255,0.92))] drop-shadow-[0_30px_80px_rgba(59,91,168,0.12)]"></div>
@@ -91,7 +93,7 @@ export default function FeatureStory() {
           <p className="text-eyebrow">Make smarter decisions</p>
           <h2 className="text-h2 mb-[18px]">Turn data into clarity</h2>
           <p className="text-subtitle text-[var(--color-ink-soft)] mb-6">Use connected reporting to understand customer behavior, operational bottlenecks, revenue opportunities, and the workflows that need attention now.</p>
-          <a className="font-black text-[var(--color-brand-blue)]" href="/streamline-stack.html">View the stack →</a>
+          <Link className="font-black text-[var(--color-brand-blue)]" to="/streamline-stack.html">View the stack →</Link>
         </div>
       </div>
     </section>

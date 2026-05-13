@@ -1,4 +1,5 @@
 import SEO from '../components/SEO';
+import { Link } from 'react-router-dom';
 
 export default function WhyStreamline() {
   const schema = {
@@ -12,37 +13,37 @@ export default function WhyStreamline() {
     {
       name: "7-Eleven",
       quote: "Since we make it a point to give our customers the most convenient experience, Streamline truly helped us achieve that goal.",
-      link: "/success-stories/how-7-eleven-streamlined-their-business.html"
+      link: "/use-case.html"
     },
     {
       name: "The Home Depot",
       quote: "Thanks Streamline! We've seen amazing results already. Streamline is the most valuable business resource we have EVER encountered.",
-      link: "/success-stories/how-the-home-depot-mission-build-lasting-relationships-with-their-clients-and-employees.html"
+      link: "/use-case.html"
     },
     {
       name: "Lincoln Properties",
       quote: "There has been a direct correlation between our new Streamline services and our increased occupancy rate.",
-      link: "/success-stories/the-occupancy-rate-of-lincoln-properties-now-depends-on-streamline-technology.html"
+      link: "/use-case.html"
     },
     {
       name: "Waldorf Astoria Resorts",
       quote: "Streamline has updated our communication. We are now in the 21st century.",
-      link: "/success-stories/know-the-effect-of-enhanced-communications-to-waldorf-astorias-legacy.html"
+      link: "/use-case.html"
     },
     {
       name: "Montgomery Medical",
       quote: "Streamline has significantly improved the communication between our patients and their doctors.",
-      link: "/success-stories/learn-how-montgomery-medical-provides-premium-medical-care-to-their-patients.html"
+      link: "/use-case.html"
     },
     {
       name: "Do It Best",
       quote: "Streamline has simplified the way we do business. We never knew that home improvement services can improve further if you have the best tool to assist you.",
-      link: "/success-stories/how-do-it-best-corp-make-the-best-even-better.html"
+      link: "/use-case.html"
     },
     {
       name: "Select",
       quote: "Tracking employees is not that hard anymore and communication with them and the customers improved a lot ever since I learned about Streamline.",
-      link: "/success-stories/discover-how-select-provides-the-best-customer-service.html"
+      link: "/use-case.html"
     }
   ];
 
@@ -91,9 +92,9 @@ export default function WhyStreamline() {
             <div className="flex-1">
               <h3 className="text-3xl font-bold mb-4">{stories[0].name}</h3>
               <p className="text-xl opacity-90 italic mb-6">"{stories[0].quote}"</p>
-              <a href={stories[0].link} className="inline-block bg-white text-[var(--color-brand-blue)] px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+              <Link to={stories[0].link} className="inline-block bg-white text-[var(--color-brand-blue)] px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
                 Read Story
-              </a>
+              </Link>
             </div>
             <div className="w-full md:w-1/3 aspect-video bg-white/10 rounded-xl grid place-items-center border border-white/20">
               <span className="text-6xl font-black opacity-50">7E</span>
@@ -108,10 +109,10 @@ export default function WhyStreamline() {
               </div>
               <h4 className="text-xl font-bold mb-3">{story.name}</h4>
               <p className="text-[var(--color-ink-soft)] italic flex-grow mb-6">"{story.quote}"</p>
-              <a href={story.link} className="text-[var(--color-brand-blue)] font-bold flex items-center gap-2 group">
+              <Link to={story.link} className="text-[var(--color-brand-blue)] font-bold flex items-center gap-2 group">
                 Read this story
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
@@ -138,9 +139,9 @@ export default function WhyStreamline() {
       <section className="section-pad bg-[var(--color-brand-blue)] text-white text-center">
         <div className="container-narrow">
           <h3 className="text-h2 mb-8 text-white">Streamline More, Worry Less</h3>
-          <a href="/signup.html" className="btn bg-white text-[var(--color-brand-blue)] hover:bg-gray-100">
+          <Link to="/signup.html" className="btn bg-white text-[var(--color-brand-blue)] hover:bg-gray-100">
             Experience Streamline Now
-          </a>
+          </Link>
         </div>
       </section>
     </>
